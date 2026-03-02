@@ -8,13 +8,39 @@
   --max-width: 900px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: var(--secondary-color);
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
+}
+
+.project:hover, section:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.9em;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Base Container for content (excluding the hero header) */
